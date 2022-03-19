@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Content from \"../components/Content/Content\";\nimport Structure from \"../components/Structure\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nexport default function Basic() {\n  return /*#__PURE__*/_jsx(Structure, {\n    comp: Content\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

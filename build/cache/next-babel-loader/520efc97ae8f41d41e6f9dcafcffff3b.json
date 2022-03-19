@@ -1,0 +1,1 @@
+{"ast":null,"code":"import TimeFetch from \"../components/TimeFetch /TimeFetch\";\nimport Structure from \"../components/Structure\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nexport default function time() {\n  return /*#__PURE__*/_jsx(Structure, {\n    comp: TimeFetch\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,12 @@
+{
+  "/Time": "pages/Time.html",
+  "/Trends": "pages/Trends.html",
+  "/User": "pages/User.html",
+  "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/basic": "pages/basic.html",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
