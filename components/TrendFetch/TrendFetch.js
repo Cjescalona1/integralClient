@@ -16,10 +16,10 @@ export default function TrendFetch(){
             currentItems &&
                 <Table>
                     <thead>
-                    <tr> <th>Tendencia</th>  <th>Volumen de tendencia</th> <th>Exportar</th></tr>
+                    <tr> <th>Tendencia</th>  <th>Volumen de tendencia</th> </tr>
                     </thead>
                     <tbody>
-                    {currentItems.map((element,index)=>( <tr key={index} > <td>{element.name}</td> <td>{element.tweet_volume}</td> <td><button className="migButton" onClick={()=>(console.log(element.name))} disabled >Exportar </button> </td></tr> ))}
+                    {currentItems.map((element,index)=>( <tr key={index} > <td>{element.name}</td> <td>{element.tweet_volume}</td> </tr> ))}
                     </tbody>
                 </Table>
             }
