@@ -11,6 +11,8 @@ const [val, setval] = useState('');
 const [data, setdata] = useState('');
 const [user, setuser] = useState('');
 const [band,setBand] =useState(false);
+const [dis, setDis] =useState(false);
+
 let  URL= " "; 
 var d = new Date(); 
 var ed = new Date(); 
@@ -22,8 +24,15 @@ function changeInput(inp){
   setdata(inp);  
 }
 function changeUser(inp){  
-  setuser(inp); 
+  setuser(inp);  
+
   setuser(inp)
+  if (inp != ''){
+    setDis(true)
+  }else{
+    setDis(false)
+  }
+
 } 
 
 async function fetchCall( ){  
@@ -96,7 +105,7 @@ const onChange = (dates) => {
         <div className="App">
             <header className="App-header"> 
             <div className="buttons">
-            <Button disabled={band} onClick={()=>{fetchCall()}}>Buscar</Button>  
+            <Button disabled={!dis} onClick={()=>{fetchCall()}}>Buscar</Button>  
             
             { val.data &&
              <CsvDownload  data={val.data} className="migButton" > Migrar</CsvDownload> 
@@ -104,7 +113,7 @@ const onChange = (dates) => {
             </div>
             <ol className="ol-res">  
            
-            {val?<> 
+            {val.data?<> 
           <Table>
             <thead>
               <tr> <th>Tweets</th> </tr>

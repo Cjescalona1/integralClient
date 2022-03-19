@@ -6,9 +6,9 @@ export default function UserFetch(){
 const [val, setval] = useState('');
 const [data, setdata] = useState('');
 const [user, setuser] = useState('');
-const [band, setBand] = useState(false)
+const [band, setBand] = useState(false);
+const [dis, setDis] =useState(false);
 let  URL= " ";
-
 
 function changeInput(inp){  
   setdata(inp);
@@ -19,6 +19,11 @@ function changeUser(inp){
   setuser(inp);
   //let aux = {from:inp}
   setuser(inp)
+  if (inp != ''){
+    setDis(true)
+  }else{
+    setDis(false)
+  }
 }
  
 
@@ -58,7 +63,7 @@ async function fetchCall(type){
         <div className="App">
             <header className="App-header"> 
             <div className="buttons">
-            <Button disabled={band} onClick={()=>{fetchCall(2)}}>Buscar</Button>  
+            <Button disabled={!dis} onClick={()=>{fetchCall(2)}}>Buscar</Button>  
             
             { val.data &&
              <CsvDownload  data={val.data} className="migButton" > Migrar</CsvDownload> 
