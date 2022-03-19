@@ -17,9 +17,9 @@ function setfetch(val){
 }
 
 async function fetchCall( ){   
-      URL = `http://localhost:9000/basicFetch?` 
-      
-      URL = URL+`query=${bodyVal.query}`;
+  //URL = `http://localhost:9000/basicFetch?` 
+  URL = `https://protected-woodland-05334.herokuapp.com/basicFetch?` 
+  URL = URL+`query=${bodyVal.query}`;
      
   await fetch(URL, {
     method:'post' }  )

@@ -111,8 +111,9 @@ function buildList(val){
 
 async function fetchCall( ){ 
       setBand(true);  
-      URL = `http://localhost:9000/basicFetch?`  
-
+      //URL = `http://localhost:9000/basicFetch?`  
+      URL = `https://protected-woodland-05334.herokuapp.com/basicFetch?`  
+      
       URL = URL+`query=${bodyVal.query}`;
      
   await fetch(URL, { method:'post'})

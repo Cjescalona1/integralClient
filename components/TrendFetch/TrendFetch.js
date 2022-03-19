@@ -84,7 +84,9 @@ function PaginatedItems({ itemsPerPage }) {
 
     async function fetchCall(v) {
         if (v!=undefined) {
-            URL = `http://localhost:9000/countryFetch?` 
+          
+          //URL = `http://localhost:9000/countryFetch?` 
+          URL = `https://protected-woodland-05334.herokuapp.com/countryFetch?` 
             URL = URL+`lat=${v.latlng[0]}`;
             URL = URL+`&long=${v.latlng[1]}`;   
             console.log(URL);
@@ -98,7 +100,8 @@ function PaginatedItems({ itemsPerPage }) {
     async function getTrends(v2) {
 
         setBand(true);     
-        let url2= "http://localhost:9000/trendListFetch"
+        //let url2= "http://localhost:9000/trendListFetch"
+        let url2= "https://protected-woodland-05334.herokuapp.com/trendListFetch"
         url2= url2+`?id=${v2.woeid}` 
 
         await fetch(url2, { method:'get' }  )

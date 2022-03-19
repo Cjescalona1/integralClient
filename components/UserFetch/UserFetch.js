@@ -30,7 +30,9 @@ function changeUser(inp){
 async function fetchCall(type){ 
   setBand(true)
     if (user !== undefined){
-      URL = `http://localhost:9000/userFetch?` 
+//      URL = `http://localhost:9000/userFetch?` 
+      URL = `https://protected-woodland-05334.herokuapp.com/userFetch?` 
+      
       URL = URL+`query=${data}`;
       URL = URL+`&from=${user}`;
     }  
