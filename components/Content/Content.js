@@ -111,7 +111,9 @@ function buildList(val){
 
 async function fetchCall( ){ 
       setBand(true);  
-      URL = `http://localhost:9000/basicFetch?` 
+//      URL = `http://localhost:9000/basicFetch?` 
+  URL = `https://tegintegralapi.herokuapp.com:9000/basicFetch?` 
+
       URL = URL+`query=${bodyVal.query}`;
      
   await fetch(URL, { method:'post'})
