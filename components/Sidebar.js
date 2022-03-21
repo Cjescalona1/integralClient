@@ -19,28 +19,28 @@ export default function Sidebar(){
       <li className="list-tab">
        <Link  href="/basic"> 
         <a className="p-link" >
-            Consulta Básica
+        Consulta por Palabras Claves
         </a>    
        </Link>
         </li>
       <li className="list-tab">
        <Link  href="/User"> 
         <a className="p-link" >
-            Consulta de Usuario
+        Consulta por Usuario
         </a>            
        </Link>
         </li>
         <li className="list-tab">
        <Link  href="/Time"> 
         <a className="p-link" >
-            Consulta de Tiempo
+        Consulta por Ventana de Tiempo
         </a>            
        </Link>
         </li>
         <li className="list-tab">
        <Link  href="/Trends"> 
         <a className="p-link" >
-            Tendencias por País
+          Consulta de Tendencias por País
         </a>            
        </Link>
         </li>

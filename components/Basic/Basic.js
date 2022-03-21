@@ -35,7 +35,7 @@ async function fetchCall( ){
           Basic Fetch
           </h1>
             <p>
-              Consulta básica asociada a la palabra o el conjunto de palabras sugerido en la búsqueda. 
+            Consulta por palabra o conjunto de palabras claves.
             </p>
         <form>
           <FormGroup >

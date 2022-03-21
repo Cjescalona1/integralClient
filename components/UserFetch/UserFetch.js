@@ -48,15 +48,16 @@ async function fetchCall(type){
         <>
         <div className="center">
           <h1>
-          Consulta de Usuario
+          Consulta por Usuario
           </h1>
             <p>
-              Consulta asociada a un conjunto de palabras y un usuario especifico <br/>
-              se puede realizar consulta de los últimos tweets referentes a el usuario dejando en blanco el campo de <strong> Valores de Consulta</strong> 
+             Descripción:Consulta asociada a un conjunto de palabras y un usuario especifico <br/>
+             ejemplo : <b>UCarabobo</b><br/>
+             se puede realizar consulta de los últimos tweets referentes a el usuario dejando en blanco el campo de Valores de Consulta <br/>
             </p>
         <form>
           <FormGroup >
-            <Label className="mt-2"> <h5> Valores de Consuta </h5> </Label> 
+            <Label className="mt-2"> <h5> Palabras Claves </h5> </Label> 
             <Input type="text" name="inp" value={data} onChange={(e)=>{changeInput(e.target.value) }}> </Input>
             <Label className="mt-3" > <h5> Usuario </h5> </Label> 
             <Input type="text" name="name" value={user} onChange={(e)=>{changeUser(e.target.value) }}> </Input>
@@ -71,7 +72,7 @@ async function fetchCall(type){
              <CsvDownload  data={val.data} className="migButton" > Migrar</CsvDownload> 
             }         
             </div>
-     {val?<> 
+     {val.data?<> 
           <Table>
             <thead>
               <tr> <th>Tweets</th> </tr>

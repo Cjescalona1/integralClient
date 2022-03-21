@@ -13,7 +13,7 @@ export default function Menu(){
                                 <div className="card cardElement" >
                                     <div className="card-img-top ULogo imgT imgLupa"> </div>
                                     <div className="card-body">
-                                        <h5 className="card-title">Consulta Básica</h5>
+                                        <h5 className="card-title">Consulta por Palabras Claves</h5>
                                         <p className="card-text">Consulta básica asociada a una palabra o conjunto de palabras</p>
                                         <br/> 
                                         <br/> 
@@ -28,7 +28,7 @@ export default function Menu(){
                                 <div className="card cardElement" >
                                     <div className="card-img-top ULogo imgT imgUser"> </div>
                                     <div className="card-body">
-                                        <h5 className="card-title">Consulta de Usuario</h5>
+                                        <h5 className="card-title">Consulta por Usuario</h5>
                                         <p className="card-text">Consulta relacionada a un usuario en la red, además de incluir palabras clave en la búsqueda</p>
                                         <br/> 
                                         <br/> 
@@ -42,8 +42,8 @@ export default function Menu(){
                                 <div className="card cardElement" >
                                     <div className="card-img-top ULogo imgT imgCalendar"> </div>
                                     <div className="card-body">
-                                        <h5 className="card-title">Consulta por tiempo</h5>
-                                        <p className="card-text">Consulta asociada a un lapso especifico, referente a un usuario, además de poder incluir palabras clave a la búsqueda</p>
+                                        <h5 className="card-title">Consulta por Ventana de Tiempo</h5>
+                                        <p className="card-text">Consulta asociada a un conjunto de palabras claves para una ventana de tiempo y a un usuario específico</p>
                                            <br/> 
                                            <br/> 
                                         <Link href="/Time">
@@ -55,8 +55,13 @@ export default function Menu(){
                                 <div className="card cardElement" >
                                     <div className="card-img-top ULogo imgT imgTrend "> </div>
                                     <div className="card-body">
-                                        <h5 className="card-title">Consulta de Tendencias</h5>
-                                        <p className="card-text">Consulta de tendencias y TT relacionados a un pais especifico , señalando además la cantidad de tweets referentes a la tendencia</p>
+                                        <h5 className="card-title">Consulta de Tendencias por País</h5>
+                                        <p className="card-text">Consulta asociada a las tendencias disponibles para un país específico
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        </p>
                                         <Link href="/Trends">
                                          <a  className="btn btn-primary">Ir a consulta</a>
                                         </Link>

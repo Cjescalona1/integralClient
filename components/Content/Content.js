@@ -127,14 +127,19 @@ async function fetchCall( ){
         <>
         <div className="center">
           <h1>
-          Consulta Básica
+          Consulta por Palabras Claves
           </h1>
             <p>
-              Consulta básica asociada a la palabra o el conjunto de palabras sugerido en la búsqueda.
+            Descripción: Consulta por palabra o conjunto de palabras claves.<br/>
+
+            Nota: Al introducir la palabra o conjunto de palabras clave en el campo correspondiente, el resultado será mostrado por pantalla y podrá descargarse en formato de archivo .csv
+            <br/>
+            Las consultas no deberan incluir caracteres especiales como <b>#</b> ni <b>@</b>
+
             </p>
         <form>
           <FormGroup >
-          <Label className="mt-2"> <h5> Valores de Consuta </h5> </Label> 
+          <Label className="mt-2"> <h5> Palabras Claves </h5> </Label> 
           <Input   value={data} onChange={(e)=>{change(e.target.value) }}> </Input>
           </FormGroup> 
         </form>
@@ -143,10 +148,9 @@ async function fetchCall( ){
             <div>
              <div className="buttons">
             <Button disabled={band} onClick={()=>{fetchCall()}}>Buscar</Button>  
-            
             { list &&
-             <CsvDownload  data={list} className="migButton" > Migrar</CsvDownload> 
-            }         
+             <CsvDownload  data={list} className="migButton" >Migrar</CsvDownload>
+            }        
             </div>
         
          </div> 

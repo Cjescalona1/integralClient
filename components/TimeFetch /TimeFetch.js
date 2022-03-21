@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Spinner, FormGroup, Label, Input,   Button,Table  } from "reactstrap";
-import ReactDatePicker  from "react-datepicker";
+import ReactDatePicker,{registerLocale}  from "react-datepicker";
 import CsvDownload from 'react-json-to-csv';
- 
- 
+import es from 'date-fns/locale/es';
+registerLocale("es", es);
 
 
 export default function TimeFetch(){
@@ -12,7 +12,10 @@ const [data, setdata] = useState('');
 const [user, setuser] = useState('');
 const [band,setBand] =useState(false);
 const [dis, setDis] =useState(false);
+var MS_PER_MINUTE = 60000;
+var d = new Date(); 
 
+var maxD = new Date(d - (10 * MS_PER_MINUTE));
 let  URL= " "; 
 var d = new Date(); 
 var ed = new Date(); 
@@ -35,7 +38,8 @@ function changeUser(inp){
 
 } 
 
-async function fetchCall( ){  
+async function fetchCall( ){   
+  let auxD = new Date(endDate - 5*60000) 
   setBand(true) 
     if (user !== undefined){
       //URL = `http://localhost:9000/timeFetch?` 
@@ -43,7 +47,7 @@ async function fetchCall( ){
       URL = URL+`query=${data}`;
       URL = URL+`&from=${user}`;
       URL = URL+`&date1=${startDate.toISOString()}`;
-      URL = URL+`&date2=${endDate.toISOString()}`;
+      URL = URL+`&date2=${auxD.toISOString()}`;
     }  
 
   await fetch(URL, {
@@ -59,7 +63,7 @@ async function fetchCall( ){
 const [startDate2, setStartDate2] = useState(new Date());
 const [endDate2, setEndDate2] = useState(null);
 const onChange = (dates) => {
-  const [start, end] = dates;
+  const [start, end] = dates; 
   setStartDate(start);
   setEndDate(end); 
 };
@@ -72,17 +76,20 @@ const onChange = (dates) => {
         <div className="center"> 
           <h1>
         
-          Consulta de Tiempo
+          Consulta por Ventana de Tiempo
           </h1>
             <p>
-              Consulta asociada a un conjunto de palabras 
-              incluyendo el lapso a consultar limitando fecha de inicio y final en la misma.<br/>
-              Esta debe estar dentro de la última semana a la fecha de consulta.  
+            Descripción: Consulta asociada a un conjunto de palabras claves para una ventana de tiempo y un usuario específico.<br/>
+            <br/>
+            En el campo usuario deberá colocar el usuario de twitter sin incluir <b>@</b> para obtener los resultados de la consulta <br/>
+            ejemplo : <b>UCarabobo</b>
+            <br/>
+            Nota: La ventana de tiempo será especificada mediante fecha de inicio y fecha de fin, seleccionados en el calendario mostrado y podrá descargarse en formato de archivo .csv. Es importante señalar que como máximo, el rango de días abarcará los siete (07) días previos a la fecha de la consulta
             </p>
    
         <form>
           <FormGroup >
-            <Label className="mt-2"> <h5> Valores de Consuta </h5> </Label> 
+            <Label className="mt-2"> <h5> Palabras Claves</h5> </Label> 
             <Input type="text" name="inp" value={data} onChange={(e)=>{changeInput(e.target.value) }}> </Input>
             <Label className="mt-3" > <h5> Usuario </h5> </Label> 
             <Input type="text" name="name" value={user} onChange={(e)=>{changeUser(e.target.value) }}> </Input>
@@ -90,13 +97,14 @@ const onChange = (dates) => {
             <div className="row mt-4 " >
             
             <ReactDatePicker
+              locale="es"
               selected={startDate}
               onChange={onChange}
               startDate={startDate}
               endDate={endDate}
               selectsRange
               inline
-              minDate={d}  maxDate={new Date()}  
+              minDate={d}  maxDate={maxD}  
               
             />
 

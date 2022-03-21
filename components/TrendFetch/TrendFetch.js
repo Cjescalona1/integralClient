@@ -114,12 +114,11 @@ function PaginatedItems({ itemsPerPage }) {
         <>
         <div className="center">
             <h1>
-            Consulta de tendencias
+            Consulta de Tendencias por País
             </h1>
                 <p>
-                Consulta asociada referente a las tendencias disponibles para un país en específico<br/>
-                se deberá elegir el país a consultar para el cual se mostraran los <b>TRENDING TOPICS</b> en el momento de la consulta <br/>
-                Estos podrán ser consultados de manera individual para posteriormente ser migrados para su mejor manejo. 
+                Descripción: Consulta asociada a las tendencias disponibles para un país específico<br/>
+                Nota: Se seleccionará del desplegable el país a consultar. Los resultados mostrarán los tópicos tendencia o <b>TRENDING TOPICS </b> para el momento de la consulta,  Si requiere mayor detalle de un tópico, podrá obtenerlo a través de las otras consultas disponibles
                 </p>
         <div className="mt-2">
             <Label> <h5>País</h5> </Label> <br/>
