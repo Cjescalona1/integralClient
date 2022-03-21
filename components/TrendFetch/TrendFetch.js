@@ -117,9 +117,9 @@ function PaginatedItems({ itemsPerPage }) {
             Consulta de tendencias
             </h1>
                 <p>
-                Consulta asociada referente a las tendencias disponibles para un país en especifico<br/>
-                se deberá elegir el pais a consultar para el cual se mostraran los <b>TRENDING TOPICS</b> en el momento de la consulta <br/>
-                estos podrán ser consultados de manera individual para posteriormente ser migrados para su mejor manejo. 
+                Consulta asociada referente a las tendencias disponibles para un país en específico<br/>
+                se deberá elegir el país a consultar para el cual se mostraran los <b>TRENDING TOPICS</b> en el momento de la consulta <br/>
+                Estos podrán ser consultados de manera individual para posteriormente ser migrados para su mejor manejo. 
                 </p>
         <div className="mt-2">
             <Label> <h5>País</h5> </Label> <br/>
