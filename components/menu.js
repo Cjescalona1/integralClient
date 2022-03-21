@@ -19,9 +19,12 @@ export default function Menu(){
                                         <br/> 
                                         <br/> 
                                         <br/>
-                                        <Link href="/basic">
-                                         <a  className="btn btn-primary">Ir a consulta</a>
-                                        </Link>
+                                       <div className="containerB">
+                                            <Link className="" href="/basic">
+                                            <a  className="btn btn-primary">Ir a consulta</a>
+                                            </Link>
+                                        </div>
+
                                     </div>
                                 </div>
                                  
@@ -33,9 +36,11 @@ export default function Menu(){
                                         <br/> 
                                         <br/> 
                                         <br/> 
-                                        <Link href="/User">
+                                        <div className="containerB">
+                                        <Link className="centerB" href="/User">
                                          <a  className="btn btn-primary">Ir a consulta</a>
                                         </Link>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -46,9 +51,11 @@ export default function Menu(){
                                         <p className="card-text">Consulta asociada a un conjunto de palabras claves para una ventana de tiempo y a un usuario específico</p>
                                            <br/> 
                                            <br/> 
-                                        <Link href="/Time">
+                                        <div className="containerB">
+                                        <Link className="centerB" href="/Time">
                                              <a  className="btn btn-primary">Ir a consulta</a>
                                         </Link>    
+                                        </div>
                                        
                                     </div>
                                 </div>
@@ -61,10 +68,13 @@ export default function Menu(){
                                         <br/>
                                         <br/>
                                         <br/>
+                                        <br/>
                                         </p>
-                                        <Link href="/Trends">
-                                         <a  className="btn btn-primary">Ir a consulta</a>
-                                        </Link>
+                                        <div className="containerB">
+                                            <Link className="centerB" href="/Trends">
+                                            <a  className="btn btn-primary">Ir a consulta</a>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
 

@@ -185,4 +185,10 @@ a {
    .link{
       color:white !important;
       text-decoration: none;
+    } 
+    .containerB {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
     }
