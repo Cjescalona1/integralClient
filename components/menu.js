@@ -45,6 +45,7 @@ export default function Menu(){
                                         <h5 className="card-title">Consulta por tiempo</h5>
                                         <p className="card-text">Consulta asociada a un lapso especifico, referente a un usuario, además de poder incluir palabras clave a la búsqueda</p>
                                            <br/> 
+                                           <br/> 
                                         <Link href="/Time">
                                              <a  className="btn btn-primary">Ir a consulta</a>
                                         </Link>    
