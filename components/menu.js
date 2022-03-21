@@ -2,8 +2,10 @@ import { Card, CardBody, Row,Col,Title } from "reactstrap"
 import Link from "next/link"
 
 export default function Menu(){
-    return(
-            <div className="menu-container">
+    return(<>
+       <div className="smSq"></div>
+
+                <div className="menu-container">
                 <div className="menu-grid">
                     <div className="menu-option">   
                            <div className="container">
@@ -29,7 +31,7 @@ export default function Menu(){
                                 <div className="card cardElement" >
                                     <div className="card-img-top ULogo imgT imgUser"> </div>
                                     <div className="card-body">
-                                        <h5 className="card-title">Consulta por Usuario</h5>
+                                        <h5 className="card-title">Consulta por Usuario de Twitter</h5>
                                         <p className="card-text">Consulta relacionada a un usuario en la red, además de incluir palabras clave en la búsqueda</p>
                                         <br/> 
                                         <br/> 
@@ -83,5 +85,6 @@ export default function Menu(){
                     </div>
                 </div>
             </div>  
+            </>
     )    
 } 

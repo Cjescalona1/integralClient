@@ -112,6 +112,8 @@ function PaginatedItems({ itemsPerPage }) {
     trendL?console.log(trendL):console.log("not yet");
     return(
         <>
+       <div className="midSq"></div>
+
         <div className="center">
             <h1>
             Consulta de Tendencias por País

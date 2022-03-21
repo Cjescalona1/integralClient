@@ -7,6 +7,6 @@ export default function Sidebar(){
             <div className="Ulogo"></div>
             <h3> HERRAMIENTA DE CIBERMETRÍA PARA LA RECOLECCIÓN DE DATOS </h3>
             <div className="Flogo"> </div>
-        </div>  
+        </div>   
    )
 };

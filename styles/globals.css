@@ -41,7 +41,14 @@ a {
   z-index: 3;
   background-color: transparent;
   padding-top: 10%;
-
+}
+.fix{
+  position: fixed;
+  z-index: 3;
+  padding-bottom: 10%;
+  margin-bottom: 20%;
+  width: 100%;
+  height: 7em;
 }
 .migButton{
   background-color: #6c757d; /* Green */
@@ -101,6 +108,7 @@ a {
     padding: 2%;
     text-align: center;
     margin-bottom: 1em;
+    background-color: #ffffff;
   } 
    
   .corner{ 
@@ -186,9 +194,19 @@ a {
       color:white !important;
       text-decoration: none;
     } 
-    .containerB {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-    }
+    .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.con{
+  margin-top: 3em;
+}
+.midSq{
+  height: 12em;
+}
+
+.smSq{
+  height: 6em;
+}

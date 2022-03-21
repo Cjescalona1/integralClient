@@ -125,6 +125,7 @@ async function fetchCall( ){
   
     return(
         <>
+       <div className="midSq"></div>
         <div className="center">
           <h1>
           Consulta por Palabras Claves
@@ -134,7 +135,7 @@ async function fetchCall( ){
 
             Nota: Al introducir la palabra o conjunto de palabras clave en el campo correspondiente, el resultado será mostrado por pantalla y podrá descargarse en formato de archivo .csv
             <br/>
-            Las consultas no deberan incluir caracteres especiales como <b>#</b> ni <b>@</b>
+            Las consultas no deberán incluir caractéres especiales como <b>#</b> ni <b>@</b>
 
             </p>
         <form>

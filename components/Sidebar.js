@@ -26,7 +26,7 @@ export default function Sidebar(){
       <li className="list-tab">
        <Link  href="/User"> 
         <a className="p-link" >
-        Consulta por Usuario
+        Consulta por Usuario de Twitter
         </a>            
        </Link>
         </li>

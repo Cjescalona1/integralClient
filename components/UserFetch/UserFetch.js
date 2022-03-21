@@ -46,6 +46,8 @@ async function fetchCall(type){
   
     return(
         <>
+       <div className="midSq"></div>
+
         <div className="center">
           <h1>
           Consulta por Usuario
@@ -59,7 +61,7 @@ async function fetchCall(type){
           <FormGroup >
             <Label className="mt-2"> <h5> Palabras Claves </h5> </Label> 
             <Input type="text" name="inp" value={data} onChange={(e)=>{changeInput(e.target.value) }}> </Input>
-            <Label className="mt-3" > <h5> Usuario </h5> </Label> 
+            <Label className="mt-3" > <h5> Usuario de Twitter a consultar</h5> </Label> 
             <Input type="text" name="name" value={user} onChange={(e)=>{changeUser(e.target.value) }}> </Input>
           </FormGroup> 
         </form>
