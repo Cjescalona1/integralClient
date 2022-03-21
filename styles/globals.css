@@ -110,6 +110,10 @@ a {
     margin-bottom: 1em; 
     background-color: #ffffff;
   } 
+  .headerTit{
+    margin-top: 1em;
+
+  }
    
   .corner{ 
     height: 450px;

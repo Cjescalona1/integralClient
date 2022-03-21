@@ -5,7 +5,7 @@ export default function Sidebar(){
   return( 
         <div className="header">    
             <div className="Ulogo"></div>
-            <h3> HERRAMIENTA DE CIBERMETRÍA PARA LA RECOLECCIÓN DE DATOS </h3>
+            <h3 className="headerTit"> HERRAMIENTA DE CIBERMETRÍA PARA LA RECOLECCIÓN DE DATOS </h3>
             <div className="Flogo"> </div>
         </div>   
    )
