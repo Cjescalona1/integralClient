@@ -214,3 +214,10 @@ a {
 .smSq{
   height: 6em;
 }
+
+.containerB {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
