@@ -117,12 +117,12 @@ function PaginatedItems({ itemsPerPage }) {
             Consulta de tendencias
             </h1>
                 <p>
-                Consulta asociada referente a las tendencias disponibles para un pais en especifico<br/>
-                se debera elegir el pais a consultar para el cual se mostraran los <b>TRENDING TOPICS</b> en el momento de la consulta <br/>
-                estos podran ser consultados de manera individual para posteriormente ser migrados para su mejor manejo. 
+                Consulta asociada referente a las tendencias disponibles para un país en especifico<br/>
+                se deberá elegir el pais a consultar para el cual se mostraran los <b>TRENDING TOPICS</b> en el momento de la consulta <br/>
+                estos podrán ser consultados de manera individual para posteriormente ser migrados para su mejor manejo. 
                 </p>
         <div className="mt-2">
-            <Label> <h5>Pais</h5> </Label> <br/>
+            <Label> <h5>País</h5> </Label> <br/>
         </div>
             <select onChange={(e)=>{call(e)}} > 
             <option></option>
@@ -142,7 +142,7 @@ function PaginatedItems({ itemsPerPage }) {
                 <> 
                 {band?
                 <Spinner>
-                Loading...
+                Cargando...
                 </Spinner>:<></>
                 }
                 </>}

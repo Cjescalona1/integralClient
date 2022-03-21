@@ -51,8 +51,8 @@ async function fetchCall(type){
           Consulta de Usuario
           </h1>
             <p>
-              Consulta asociada a un cojunto de palabras y un usuario especifico <br/>
-              se puede realizar consulta de los ultimos tweets referentes a el usuario dejando en blanco el campo de <strong> Valores de Consulta</strong> 
+              Consulta asociada a un conjunto de palabras y un usuario especifico <br/>
+              se puede realizar consulta de los últimos tweets referentes a el usuario dejando en blanco el campo de <strong> Valores de Consulta</strong> 
             </p>
         <form>
           <FormGroup >
@@ -85,7 +85,7 @@ async function fetchCall(type){
          </>:<> 
           {band?
             <Spinner>
-            Loading...
+            Cargando...
             </Spinner>:<></>
           }
          

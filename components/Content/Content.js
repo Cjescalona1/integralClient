@@ -127,10 +127,10 @@ async function fetchCall( ){
         <>
         <div className="center">
           <h1>
-          Consulta Basica
+          Consulta Básica
           </h1>
             <p>
-              Consulta basica asociada a la palabra o el conjunto de palabras sugerido en la busqueda. 
+              Consulta básica asociada a la palabra o el conjunto de palabras sugerido en la búsqueda.
             </p>
         <form>
           <FormGroup >
@@ -168,7 +168,7 @@ async function fetchCall( ){
         <> 
           {band?
             <Spinner>
-            Loading...
+            Cargando...
             </Spinner>:<></>
           }
         </>}

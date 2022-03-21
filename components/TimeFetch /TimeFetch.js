@@ -75,9 +75,9 @@ const onChange = (dates) => {
           Consulta de Tiempo
           </h1>
             <p>
-              Consulta asociada a un cojunto de palabras 
+              Consulta asociada a un conjunto de palabras 
               incluyendo el lapso a consultar limitando fecha de inicio y final en la misma.<br/>
-              Esta debe estar dentro de la ultima semana a la fecha de consulta.  
+              Esta debe estar dentro de la última semana a la fecha de consulta.  
             </p>
    
         <form>
@@ -128,7 +128,7 @@ const onChange = (dates) => {
          </>:<> 
           {band?
             <Spinner>
-            Loading...
+           Cargando...
             </Spinner>:<></>
           }
          

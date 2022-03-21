@@ -12,14 +12,14 @@ export default function Sidebar(){
       <li className="list-tab">
         <Link href="/">
             <a className="p-link" >
-            Indice
+            Índice
             </a>
         </Link>
       </li>
       <li className="list-tab">
        <Link  href="/basic"> 
         <a className="p-link" >
-            Consulta Basica
+            Consulta Básica
         </a>    
        </Link>
         </li>
@@ -41,7 +41,6 @@ export default function Sidebar(){
        <Link  href="/Trends"> 
         <a className="p-link" >
             Tendencias por País
-
         </a>            
        </Link>
         </li>
