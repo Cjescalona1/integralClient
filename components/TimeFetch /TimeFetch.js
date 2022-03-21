@@ -78,21 +78,17 @@ const onChange = (dates) => {
           <h1>
         
           Consulta por Ventana de Tiempo
-          </h1>
-            <p>
-            Descripción: Consulta asociada a un conjunto de palabras claves para una ventana de tiempo y un usuario específico.<br/>
+          </h1><b>Descripción:</b> Consulta asociada a un conjunto de palabras claves para una ventana de tiempo y un usuario de Twitter específico.<br/>
+           <b>Nota:</b> La ventana de tiempo será especificada mediante fecha de inicio y fecha de fin seleccionados del calendario mostrado y podrá descargarse en formato de archivo .csv.
             <br/>
-            En el campo usuario deberá colocar el usuario de twitter sin incluir <b>@</b> para obtener los resultados de la consulta <br/>
-            ejemplo : <b>UCarabobo</b>
-            <br/>
-            Nota: La ventana de tiempo será especificada mediante fecha de inicio y fecha de fin, seleccionados en el calendario mostrado y podrá descargarse en formato de archivo .csv. Es importante señalar que como máximo, el rango de días abarcará los siete (07) días previos a la fecha de la consulta
-            </p>
-   
+            Es importante señalar que como máximo, el rango de tiempo abarca los siete (07) días previos a la fecha de la consulta. 
+            En el campo Usuario de Twitter se debe introducir el nombre del usuario sin el símbolo <b>@</b>, para que se despliegue el conjunto de tweets resultantes. Por
+            ejemplo: <b>UCarabobo</b>
         <form>
           <FormGroup >
             <Label className="mt-2"> <h5> Palabras Claves</h5> </Label> 
             <Input type="text" name="inp" value={data} onChange={(e)=>{changeInput(e.target.value) }}> </Input>
-            <Label className="mt-3" > <h5> Usuario </h5> </Label> 
+            <Label className="mt-3" > <h5> Usuario de Twitter </h5> </Label> 
             <Input type="text" name="name" value={user} onChange={(e)=>{changeUser(e.target.value) }}> </Input>
           
             <div className="row mt-4 " >

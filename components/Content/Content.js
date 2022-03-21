@@ -131,9 +131,9 @@ async function fetchCall( ){
           Consulta por Palabras Claves
           </h1>
             <p>
-            Descripción: Consulta por palabra o conjunto de palabras claves.<br/>
+            <b>Descripción:</b> Consulta por palabra o conjunto de palabras claves.<br/>
 
-            Nota: Al introducir la palabra o conjunto de palabras clave en el campo correspondiente, el resultado será mostrado por pantalla y podrá descargarse en formato de archivo .csv
+            <b>Nota:</b> Al introducir la palabra o conjunto de palabras clave en el campo correspondiente, el resultado será mostrado por pantalla y podrá descargarse en formato de archivo .csv
             <br/>
             Las consultas no deberán incluir caractéres especiales como <b>#</b> ni <b>@</b>
 

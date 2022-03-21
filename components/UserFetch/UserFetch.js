@@ -50,12 +50,13 @@ async function fetchCall(type){
 
         <div className="center">
           <h1>
-          Consulta por Usuario
+          Consulta por Usuario de Twitter
           </h1>
             <p>
-             Descripción:Consulta asociada a un conjunto de palabras y un usuario especifico <br/>
-             ejemplo : <b>UCarabobo</b><br/>
-             se puede realizar consulta de los últimos tweets referentes a el usuario dejando en blanco el campo de Valores de Consulta <br/>
+            <b>Descripción:</b> Consulta asociada a un conjunto de palabras y un usuario de Twitter específico, por ejemplo: <b>UCarabobo</b><br/>
+            <b>Nota</b> Se podrán obtener los resultados de la última consulta realizada, dejando en blanco el campo Usuario Twitter<br/>
+            En el campo Usuario Twitter deberá introducir el nombre del usuario sin el símbolo <b>@</b>, para que se despliegue el conjunto de tweets resultantes. 
+
             </p>
         <form>
           <FormGroup >
